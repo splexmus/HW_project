@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Apr 11 11:47:45 2026
+# Process ID         : 215955
+# Current directory  : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/ila_synth_1
+# Command line       : vivado -log ila.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila.tcl
+# Log file           : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/ila_synth_1/ila.vds
+# Journal file       : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/ila_synth_1/vivado.jou
+# Running On         : Ubuntuvictus
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 1013.529 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 33271 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41861 MB
+# Available Virtual  : 35318 MB
+#-----------------------------------------------------------
+source ila.tcl -notrace
