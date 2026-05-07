@@ -124,8 +124,7 @@ OPTRACE "add files" START { }
   add_files -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/ov7670_top.dcp
   read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila/ila.xci
-  read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila_1/ila_1.xci
+  read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila_1_1/ila_1.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc
 OPTRACE "read constraints: implementation" END { }

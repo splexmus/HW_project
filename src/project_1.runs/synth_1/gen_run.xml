@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-2" LaunchTime="1776754210" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ov7670_top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-2" LaunchTime="1778130796" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ov7670_top.dcp">
   <File Type="VDS-TIMING-PB" Name="ov7670_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ov7670_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ov7670_top.dcp"/>
@@ -153,5 +153,4 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ila"/>
 </GenRun>

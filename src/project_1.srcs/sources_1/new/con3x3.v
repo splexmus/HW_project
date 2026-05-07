@@ -24,6 +24,8 @@ end
 // =====================
 // INTERNAL REGISTERS
 // =====================
+reg [4:0] done_hold = 0;
+
 reg [3:0] state = 0;
 reg [3:0] idx = 0;
 
@@ -58,6 +60,13 @@ localparam IDLE = 0,
 always @(posedge clk) begin
     done <= 0;
 
+    if (done_hold != 0) begin
+        done <= 1;
+        done_hold <= done_hold - 1;
+    end else begin
+        done <= 0;
+    end
+    
     case(state)
 
     // -----------------
@@ -108,15 +117,16 @@ always @(posedge clk) begin
     DONE: begin
         result <= sum - 6;
         done <= 1;
+        done_hold <= 15;
     
         if (x < 29) begin
             x <= x + 1;
-        end else begin
+        end
+        else begin
             x <= 0;
+        
             if (y < 29)
                 y <= y + 1;
-            else
-                y <= 29;   // stay here
         end
     
         idx <= 0;

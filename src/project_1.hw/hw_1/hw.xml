@@ -29,6 +29,7 @@
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="cnn_start" gui_info="Trigger Setup=0"/>
     <Object name="frame_done" gui_info=""/>
   </ObjectList>
   <ObjectList object_type="hw_sysmon" gui_info="">
@@ -661,10 +662,62 @@
         <net name="cnn_result[0]"/>
       </nets>
     </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="cnn_result[31]"/>
+        <net name="cnn_result[30]"/>
+        <net name="cnn_result[29]"/>
+        <net name="cnn_result[28]"/>
+        <net name="cnn_result[27]"/>
+        <net name="cnn_result[26]"/>
+        <net name="cnn_result[25]"/>
+        <net name="cnn_result[24]"/>
+        <net name="cnn_result[23]"/>
+        <net name="cnn_result[22]"/>
+        <net name="cnn_result[21]"/>
+        <net name="cnn_result[20]"/>
+        <net name="cnn_result[19]"/>
+        <net name="cnn_result[18]"/>
+        <net name="cnn_result[17]"/>
+        <net name="cnn_result[16]"/>
+        <net name="cnn_result[15]"/>
+        <net name="cnn_result[14]"/>
+        <net name="cnn_result[13]"/>
+        <net name="cnn_result[12]"/>
+        <net name="cnn_result[11]"/>
+        <net name="cnn_result[10]"/>
+        <net name="cnn_result[9]"/>
+        <net name="cnn_result[8]"/>
+        <net name="cnn_result[7]"/>
+        <net name="cnn_result[6]"/>
+        <net name="cnn_result[5]"/>
+        <net name="cnn_result[4]"/>
+        <net name="cnn_result[3]"/>
+        <net name="cnn_result[2]"/>
+        <net name="cnn_result[1]"/>
+        <net name="cnn_result[0]"/>
+      </nets>
+    </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -675,7 +728,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -1020,6 +1073,58 @@
         <net name="score[2]"/>
         <net name="score[1]"/>
         <net name="score[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="score_1[31]"/>
+        <net name="score_1[30]"/>
+        <net name="score_1[29]"/>
+        <net name="score_1[28]"/>
+        <net name="score_1[27]"/>
+        <net name="score_1[26]"/>
+        <net name="score_1[25]"/>
+        <net name="score_1[24]"/>
+        <net name="score_1[23]"/>
+        <net name="score_1[22]"/>
+        <net name="score_1[21]"/>
+        <net name="score_1[20]"/>
+        <net name="score_1[19]"/>
+        <net name="score_1[18]"/>
+        <net name="score_1[17]"/>
+        <net name="score_1[16]"/>
+        <net name="score_1[15]"/>
+        <net name="score_1[14]"/>
+        <net name="score_1[13]"/>
+        <net name="score_1[12]"/>
+        <net name="score_1[11]"/>
+        <net name="score_1[10]"/>
+        <net name="score_1[9]"/>
+        <net name="score_1[8]"/>
+        <net name="score_1[7]"/>
+        <net name="score_1[6]"/>
+        <net name="score_1[5]"/>
+        <net name="score_1[4]"/>
+        <net name="score_1[3]"/>
+        <net name="score_1[2]"/>
+        <net name="score_1[1]"/>
+        <net name="score_1[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">

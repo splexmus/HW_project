@@ -15,8 +15,10 @@ module downscale_32x32(
 wire [3:0] r = pixel_in[11:8];
 wire [3:0] g = pixel_in[7:4];
 wire [3:0] b = pixel_in[3:0];
-wire [7:0] gray = r*3 + g*6 + b;
-
+wire [7:0] gray =
+    ((r*3 + g*6 + b) > 255) ?
+    8'd255 :
+    (r*3 + g*6 + b);
 // coords
 reg [5:0] sx = 0;
 reg [5:0] sy = 0;

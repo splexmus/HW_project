@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: SYSU
-// Engineer: liuzs
-// 
-// Create Date: 2018/12/03 21:37:38
-// Design Name: 
-// Module Name: ov7670_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module ov7670_top(
@@ -40,7 +21,10 @@ input btn,
 output pwdn,
 output reset,
 input [11:0] sw,
-output [1:0] Tled
+output [1:0] Tled,
+output [2:0] Sled,
+output reg [6:0] seg,
+output reg [3:0] an
 );
 wire [16:0] frame_addr;
 wire [16:0] capture_addr;   
@@ -193,15 +177,6 @@ clk_wiz_0 clk_div(
 		.clk_out4 (clk24)
 );
 
-ila ila_out(
-        .clk(clk),
-        .probe0(vga_hsync),
-        .probe1(vga_vsync),
-        .probe2(frame_addr),
-        .probe3(capture_addr),
-        .probe4(data_16)
-        
-);
 
 reg [9:0] dbg_addr;
 reg [7:0] dbg_pixel;
@@ -210,13 +185,12 @@ reg dbg_done;
 reg dbg_frame;
 
 ila_1 ila_cnn (
-    .clk(OV7670_PCLK),
-
+    .clk(clk),
     .probe0(frame_done),
     .probe1(cnn_start),
     .probe2(cnn_addr),
     .probe3(cnn_pixel),
-    .probe4(cnn_result),
+    .probe4(score),
     .probe5(cnn_done),
     .probe6(score),
     .probe7(running)
@@ -231,7 +205,67 @@ conv3x3 cnn(
     .result(cnn_result)
 );
 
-assign Tled[0] = frame_done;   // face detection
-assign Tled[1] = cnn_done;        // CNN activity
+// ==========================================
+// FACE STABILITY DETECTOR
+// ==========================================
+
+reg [5:0] face_count = 0;
+reg stable_face = 0;
+
+always @(posedge OV7670_PCLK) begin
+
+    if (cnn_done) begin
+
+        // require several consecutive detections
+        if (face_detected) begin
+            if (face_count < 20)
+                face_count <= face_count + 1;
+        end
+        else begin
+            if (face_count > 0)
+                face_count <= face_count - 1;
+        end
+
+        // stable decision
+        if (face_count > 10)
+            stable_face <= 1;
+        else
+            stable_face <= 0;
+
+    end
+end
+
+
+// ==========================================
+// LEDs
+// ==========================================
+
+assign Tled[0] = cnn_done;
+assign Tled[1] = stable_face;
+
+assign Sled[0] = stable_face;
+assign Sled[1] = running;
+assign Sled[2] = cnn_start;
+
+
+// ==========================================
+// 7-SEGMENT DISPLAY
+// Basys3 common-anode
+// ==========================================
+
+always @(*) begin
+
+    // enable only first digit
+    an = 4'b1110;
+
+    if (stable_face) begin
+        // show "F"
+        seg = 7'b0001110;
+    end
+    else begin
+        // show "0"
+        seg = 7'b1000000;
+    end
+end
 
 endmodule

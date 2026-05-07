@@ -58,6 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-2
@@ -97,17 +98,11 @@ set_property used_in_implementation false [get_files -all /home/splexmus/Documen
 read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila/ila.xci
-set_property used_in_synthesis false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila/ila_ooc.xdc]
-
-read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila_1/ila_1.xci
-set_property used_in_synthesis false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1/ila_1_ooc.xdc]
+read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila_1_1/ila_1.xci
+set_property used_in_synthesis false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
