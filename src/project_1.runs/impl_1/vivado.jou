@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu May  7 12:14:56 2026
-# Process ID         : 1310630
+# Start of session at: Thu May  7 12:32:47 2026
+# Process ID         : 1479150
 # Current directory  : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/impl_1
 # Command line       : vivado -log ov7670_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov7670_top.tcl -notrace
 # Log file           : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/impl_1/ov7670_top.vdi
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.4 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
-# CPU Frequency      : 850.353 MHz
+# CPU Frequency      : 953.420 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 12
 # Host memory        : 33271 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 41861 MB
-# Available Virtual  : 31458 MB
+# Available Virtual  : 30962 MB
 #-----------------------------------------------------------
 source ov7670_top.tcl -notrace

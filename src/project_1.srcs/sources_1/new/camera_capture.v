@@ -28,25 +28,6 @@ wire [3:0] r4 = r5[4:1];
 wire [3:0] g4 = g6[5:2];
 wire [3:0] b4 = b5[4:1];
 
-// ===== Color + Gamma =====
-wire [3:0] r_lut, g_lut, b_lut;
-wire [3:0] r_gamma, g_gamma, b_gamma;
-
-// Color correction
-color_lut c1(
-    .r_in(r4),
-    .g_in(g4),
-    .b_in(b4),
-    .r_out(r_lut),
-    .g_out(g_lut),
-    .b_out(b_lut)
-);
-
-// Gamma correction
-gamma_lut g1(.in(r_lut), .out(r_gamma));
-gamma_lut g2(.in(g_lut), .out(g_gamma));
-gamma_lut g3(.in(b_lut), .out(b_gamma));
-
 assign addr = y_reg * 320 + x_reg;
 assign dout = dout1;
 

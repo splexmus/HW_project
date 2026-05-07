@@ -80,11 +80,9 @@ read_verilog -library xil_defaultlib {
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_capture.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_config.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/classifier.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/color_lut.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/con3x3.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/debounce.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/downscale_32x32.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/gamma_lut.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/pixel_filter.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_disp.v

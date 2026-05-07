@@ -53,3 +53,8 @@
     <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1310537" HostCore="12" HostMemory="32491872">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1479057" HostCore="12" HostMemory="32491872">
+    </Process>
+</ProcessHandle>
