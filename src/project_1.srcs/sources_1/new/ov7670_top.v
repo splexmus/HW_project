@@ -3,20 +3,20 @@
 
 module ov7670_top(
 input  clk100,
-input  OV7670_VSYNC, //SCCBЭ��ʵ�ֳ�ͬ���ź�����
-input  OV7670_HREF,  //SCCBЭ��ʵ����ͬ���ź�����
-input  OV7670_PCLK,  //����ʱ������
-output OV7670_XCLK,  //����ͷ����ʱ��
+input  OV7670_VSYNC, 
+input  OV7670_HREF,  
+input  OV7670_PCLK,  
+output OV7670_XCLK,  
 output OV7670_SIOC, 
 inout  OV7670_SIOD,
-input [7:0] OV7670_D, //���ݴ�����
+input [7:0] OV7670_D, 
 
 output[3:0] LED,
 output[3:0] vga_red,
 output[3:0] vga_green,
 output[3:0] vga_blue,
-output vga_hsync, //��ֱͬ��
-output vga_vsync, //��ͬ��
+output vga_hsync, 
+output vga_vsync, 
 input btn,
 output pwdn,
 output reset,
@@ -33,7 +33,8 @@ wire  config_finished;
 wire  clk25; 
 wire  clk50;
 wire  clk;
-wire  clk24;     
+wire  clk24;
+wire  clk108;     
 wire  resend;        
 wire [11:0] frame_pixel;  
 wire [11:0]  data_16;
@@ -52,7 +53,7 @@ wire frame_done;
 wire face_detected;
 wire [31:0] score;
   
-assign pwdn = 0; //0Ϊ����������1Ϊ�͹���ģʽ
+assign pwdn = 0; 
 assign reset = 1;
   
 reg cnn_start = 0;
@@ -88,15 +89,15 @@ pixel_filter pf(
     .pixel_out(filtered_pixel)
 );
 
- vga   vga_display (
-		.clk25       (clk25),
+vga_bilinear_1280x960   vga_display (
+		.clk108       (clk108),
 		.vga_red    (vga_red),
 		.vga_green   (vga_green),
 		.vga_blue    (vga_blue),
 		.vga_hsync   (vga_hsync),
 		.vga_vsync  (vga_vsync),
-		.HCnt       (),
-		.VCnt       (),
+		//.HCnt       (),
+		//.VCnt       (),
 
 		.frame_addr   (frame_addr),
 		.frame_pixel  (filtered_pixel)//replace with frame_pixel
@@ -108,7 +109,7 @@ pixel_filter pf(
 		.addra (capture_addr),
 		.dina  (data_16),
 
-		.clkb   (clk25),
+		.clkb   (clk108),//clk25
 		.addrb (frame_addr),
 		.doutb (frame_pixel)
  );
@@ -174,7 +175,8 @@ clk_wiz_0 clk_div(
 		.clk_out1 (clk50),
 		.clk_out2 (clk25),
 		.clk_out3 (clk),
-		.clk_out4 (clk24)
+		.clk_out4 (clk24),
+		.clk_out5 (clk108)
 );
 
 

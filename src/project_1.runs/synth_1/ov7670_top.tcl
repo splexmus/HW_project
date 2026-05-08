@@ -85,7 +85,7 @@ read_verilog -library xil_defaultlib {
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/downscale_32x32.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/pixel_filter.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_disp.v
+  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v
   /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v
 }
 read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci

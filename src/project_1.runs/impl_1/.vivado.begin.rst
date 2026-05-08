@@ -1,60 +1,25 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="75000" HostCore="12" HostMemory="32491872">
+    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="743628" HostCore="12" HostMemory="32491872">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="196884" HostCore="12" HostMemory="32491872">
+    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="837784" HostCore="12" HostMemory="32491872">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="328673" HostCore="12" HostMemory="32491872">
+    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="932001" HostCore="12" HostMemory="32491872">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="461876" HostCore="12" HostMemory="32491872">
+    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1025375" HostCore="12" HostMemory="32491872">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="504206" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="675600" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="944075" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1121518" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1146674" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1166570" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1310537" HostCore="12" HostMemory="32491872">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1479057" HostCore="12" HostMemory="32491872">
+    <Process Command="vivado" Owner="splexmus" Host="Ubuntuvictus" Pid="1138446" HostCore="12" HostMemory="32491872">
     </Process>
 </ProcessHandle>
