@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.2
-| Date         : Mon May 11 13:04:57 2026
-| Host         : Ubuntuvictus
+| Date         : Tue May 12 10:12:42 2026
+| Host         : LAPTOP-16BVB5I3
 | Design       : design_1
 | Device       : xc7a35t-cpg236-2--
 -------------------------------------

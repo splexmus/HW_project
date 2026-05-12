@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/ov7670_top.tcl"
+  variable script "C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/ov7670_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,9 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
-set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-2
@@ -67,8 +64,8 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/splexmus/Documents/Basys3-Camera/src/project_1.cache/wt [current_project]
-set_property parent.project_path /home/splexmus/Documents/Basys3-Camera/src/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
@@ -76,31 +73,31 @@ set_property ip_cache_permissions disable [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/buffer_32x32.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_capture.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_config.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/classifier.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/con3x3.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/debounce.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/downscale_32x32.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/pixel_filter.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v
-  /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/buffer_32x32.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_capture.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_config.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/classifier.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/con3x3.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/debounce.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/downscale_32x32.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/pixel_filter.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/sccb_sender.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v
+  C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v
 }
-read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_ip -quiet C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-read_ip -quiet /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/ip/ila_1_1/ila_1.xci
-set_property used_in_synthesis false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_1_ooc.xdc]
+read_ip -quiet C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/ip/ila_1_1/ila_1.xci
+set_property used_in_synthesis false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/ila_1_1/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/ila_1_1/ila_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -111,14 +108,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc
-set_property used_in_implementation false [get_files /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc]
+read_xdc C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc
+set_property used_in_implementation false [get_files C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/utils_1/imports/synth_1/ov7670_top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/utils_1/imports/synth_1/ov7670_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -1,29 +1,29 @@
 #-----------------------------------------------------------
 # Vivado v2025.2 (64-bit)
-# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon May 11 13:01:29 2026
-# Process ID         : 1397373
-# Current directory  : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1
-# Command line       : vivado -log ov7670_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_top.tcl
-# Log file           : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/ov7670_top.vds
-# Journal file       : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/vivado.jou
-# Running On         : Ubuntuvictus
-# Platform           : Ubuntu
-# Operating System   : Ubuntu 24.04.4 LTS
-# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
-# CPU Frequency      : 531.142 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 12
-# Host memory        : 33271 MB
-# Swap memory        : 8589 MB
-# Total Virtual      : 41861 MB
-# Available Virtual  : 27818 MB
+# Start of session at: Tue May 12 10:09:48 2026
+# Process ID         : 21640
+# Current directory  : C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1
+# Command line       : vivado.exe -log ov7670_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_top.tcl
+# Log file           : C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/ov7670_top.vds
+# Journal file       : C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-16BVB5I3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 225H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 14
+# Host memory        : 25230 MB
+# Swap memory        : 15569 MB
+# Total Virtual      : 40799 MB
+# Available Virtual  : 16623 MB
 #-----------------------------------------------------------
 source ov7670_top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/utils_1/imports/synth_1/ov7670_top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/utils_1/imports/synth_1/ov7670_top.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/utils_1/imports/synth_1/ov7670_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/utils_1/imports/synth_1/ov7670_top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top ov7670_top -part xc7a35tcpg236-2
 Starting synth_design
@@ -32,23 +32,21 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-2
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1398485
+INFO: [Synth 8-7075] Helper process launched with PID 37192
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2214.434 ; gain = 482.188 ; free physical = 8018 ; free virtual = 25217
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1290.633 ; gain = 540.785
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'I2C_Controller' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v:859]
-INFO: [Synth 8-13127] previous definition of module 'I2C_Controller' is here [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v:272]
-INFO: [Synth 8-6157] synthesizing module 'ov7670_top' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:9]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/debounce.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/debounce.v:20]
-INFO: [Synth 8-6157] synthesizing module 'pixel_filter' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/pixel_filter.v:20]
-INFO: [Synth 8-226] default block is never used [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/pixel_filter.v:91]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_filter' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/pixel_filter.v:20]
-INFO: [Synth 8-6157] synthesizing module 'vga_bilinear_1280x960' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'vga_bilinear_1280x960' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:14]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_top' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/debounce.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/debounce.v:20]
+INFO: [Synth 8-6157] synthesizing module 'pixel_filter' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/pixel_filter.v:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/pixel_filter.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_filter' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/pixel_filter.v:20]
+INFO: [Synth 8-6157] synthesizing module 'vga_bilinear_1280x960' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'vga_bilinear_1280x960' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:14]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -124,28 +122,28 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/splexmus/Document
 	Parameter C_COUNT_36K_BRAM bound to: 26 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     16.2184 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_12' declared at '/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195209' bound to instance 'U0' of component 'blk_mem_gen_v8_4_12' [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:242]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
-INFO: [Synth 8-6157] synthesizing module 'downscale_32x32' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/downscale_32x32.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'downscale_32x32' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/downscale_32x32.v:25]
-INFO: [Synth 8-6157] synthesizing module 'classifier' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/classifier.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'classifier' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/classifier.v:22]
-INFO: [Synth 8-6157] synthesizing module 'buffer_32x32' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/buffer_32x32.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'buffer_32x32' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/buffer_32x32.v:26]
-INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_capture.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_capture.v:20]
-INFO: [Synth 8-6157] synthesizing module 'I2C_AV_Config' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_config.v:20]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_config.v:181]
-INFO: [Synth 8-6157] synthesizing module 'I2C_OV7670_RGB565_Config' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v:276]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v:497]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/sccb_sender.v:497]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/camera_config.v:20]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
-INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/splexmus/Documents/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
-INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/home/splexmus/Documents/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
-INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/home/splexmus/Documents/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:133907]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_12' declared at 'c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195209' bound to instance 'U0' of component 'blk_mem_gen_v8_4_12' [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:242]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (0#1) [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'downscale_32x32' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/downscale_32x32.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'downscale_32x32' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/downscale_32x32.v:25]
+INFO: [Synth 8-6157] synthesizing module 'classifier' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/classifier.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'classifier' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/classifier.v:22]
+INFO: [Synth 8-6157] synthesizing module 'buffer_32x32' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/buffer_32x32.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_32x32' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/buffer_32x32.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_capture.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_capture.v:20]
+INFO: [Synth 8-6157] synthesizing module 'I2C_AV_Config' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_config.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_config.v:181]
+INFO: [Synth 8-6157] synthesizing module 'I2C_OV7670_RGB565_Config' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/sccb_sender.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/sccb_sender.v:276]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/sccb_sender.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/sccb_sender.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/camera_config.v:20]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:133907]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT bound to: 12 - type: integer 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000e+00 - type: double 
@@ -168,32 +166,32 @@ INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/home/splexmus/Documents/v
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (0#1) [/home/splexmus/Documents/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:133907]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/splexmus/Documents/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/home/splexmus/Documents/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:346]
-INFO: [Synth 8-6157] synthesizing module 'ila_1' [/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/.Xil/Vivado-1397373-Ubuntuvictus/realtime/ila_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_1' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/.Xil/Vivado-1397373-Ubuntuvictus/realtime/ila_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'conv3x3' [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/con3x3.v:26]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/con3x3.v:151]
-INFO: [Synth 8-6155] done synthesizing module 'conv3x3' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/con3x3.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'ov7670_top' (0#1) [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:9]
-WARNING: [Synth 8-6014] Unused sequential element addr01_reg was removed.  [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:130]
-WARNING: [Synth 8-6014] Unused sequential element addr10_reg was removed.  [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:132]
-WARNING: [Synth 8-6014] Unused sequential element addr11_reg was removed.  [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:133]
-WARNING: [Synth 8-6014] Unused sequential element p01_reg was removed.  [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:156]
-WARNING: [Synth 8-6014] Unused sequential element p10_reg was removed.  [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:157]
-WARNING: [Synth 8-6014] Unused sequential element p11_reg was removed.  [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:158]
-WARNING: [Synth 8-3936] Found unconnected internal register 'b_interp_reg' and it is trimmed from '8' to '6' bits. [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:197]
-WARNING: [Synth 8-3936] Found unconnected internal register 'g_interp_reg' and it is trimmed from '8' to '6' bits. [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:196]
-WARNING: [Synth 8-3936] Found unconnected internal register 'r_interp_reg' and it is trimmed from '8' to '6' bits. [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:195]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ds'. This will prevent further optimization [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:231]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_cnn'. This will prevent further optimization [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:346]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cnn'. This will prevent further optimization [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:364]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'buf32'. This will prevent further optimization [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:271]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cls'. This will prevent further optimization [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/sources_1/new/ov7670_top.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:133907]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:346]
+INFO: [Synth 8-6157] synthesizing module 'ila_1' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/.Xil/Vivado-21640-LAPTOP-16BVB5I3/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_1' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/.Xil/Vivado-21640-LAPTOP-16BVB5I3/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'conv3x3' [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/con3x3.v:26]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/con3x3.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'conv3x3' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/con3x3.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_top' (0#1) [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:9]
+WARNING: [Synth 8-6014] Unused sequential element addr01_reg was removed.  [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:130]
+WARNING: [Synth 8-6014] Unused sequential element addr10_reg was removed.  [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:132]
+WARNING: [Synth 8-6014] Unused sequential element addr11_reg was removed.  [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:133]
+WARNING: [Synth 8-6014] Unused sequential element p01_reg was removed.  [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:156]
+WARNING: [Synth 8-6014] Unused sequential element p10_reg was removed.  [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:157]
+WARNING: [Synth 8-6014] Unused sequential element p11_reg was removed.  [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:158]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b_interp_reg' and it is trimmed from '8' to '6' bits. [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:197]
+WARNING: [Synth 8-3936] Found unconnected internal register 'g_interp_reg' and it is trimmed from '8' to '6' bits. [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:196]
+WARNING: [Synth 8-3936] Found unconnected internal register 'r_interp_reg' and it is trimmed from '8' to '6' bits. [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/vga_bilinear_1280x960.v:195]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ds'. This will prevent further optimization [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:231]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_cnn'. This will prevent further optimization [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:346]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cnn'. This will prevent further optimization [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:364]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'buf32'. This will prevent further optimization [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:271]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cls'. This will prevent further optimization [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/sources_1/new/ov7670_top.v:255]
 WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
@@ -305,67 +303,67 @@ WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__paramet
 WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2536.043 ; gain = 803.797 ; free physical = 7789 ; free virtual = 24989
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1695.805 ; gain = 945.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2536.043 ; gain = 803.797 ; free physical = 7787 ; free virtual = 24987
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1695.805 ; gain = 945.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2536.043 ; gain = 803.797 ; free physical = 7787 ; free virtual = 24987
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1695.805 ; gain = 945.957
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2536.043 ; gain = 0.000 ; free physical = 7789 ; free virtual = 24990
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1695.805 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_1/ila_1_in_context.xdc] for cell 'ila_cnn'
-Finished Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/ila_1_1/ila_1/ila_1_in_context.xdc] for cell 'ila_cnn'
-Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_div/inst'
-Finished Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_div/inst'
-Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_div/inst'
-Finished Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_div/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
+Parsing XDC File [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/ila_1_1/ila_1/ila_1_in_context.xdc] for cell 'ila_cnn'
+Finished Parsing XDC File [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/ila_1_1/ila_1/ila_1_in_context.xdc] for cell 'ila_cnn'
+Parsing XDC File [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_div/inst'
+Finished Parsing XDC File [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_div/inst'
+Parsing XDC File [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_div/inst'
+Finished Parsing XDC File [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_div/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc]
-WARNING: [Vivado 12-507] No nets matched 'OV7670_PCLK_IBUF'. [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc:77]
-Finished Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ov7670_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
+Parsing XDC File [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'OV7670_PCLK_IBUF'. [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc:77]
+Finished Parsing XDC File [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ov7670_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
+Parsing XDC File [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2576.062 ; gain = 0.000 ; free physical = 7785 ; free virtual = 24994
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1710.152 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2576.098 ; gain = 0.000 ; free physical = 7785 ; free virtual = 24994
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1710.152 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2576.098 ; gain = 843.852 ; free physical = 7802 ; free virtual = 25036
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1710.152 ; gain = 960.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2584.066 ; gain = 851.820 ; free physical = 7802 ; free virtual = 25036
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1710.152 ; gain = 960.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2584.066 ; gain = 851.820 ; free physical = 7802 ; free virtual = 25036
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1710.152 ; gain = 960.305
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I2C_AV_Config'
 ---------------------------------------------------------------------------------------------------
@@ -377,7 +375,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mSetup_ST_reg' using encoding 'one-hot' in module 'I2C_AV_Config'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2584.066 ; gain = 851.820 ; free physical = 7801 ; free virtual = 25013
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1710.152 ; gain = 960.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -410,7 +408,7 @@ WARNING: [Synth 8-3917] design ov7670_top has port an[0] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port pwdn driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port reset driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2600.082 ; gain = 867.836 ; free physical = 7575 ; free virtual = 24811
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1710.152 ; gain = 960.305
 ---------------------------------------------------------------------------------
  Sort Area is  vga_display/src_x0_0 : 0 0 : 254 254 : Used 1 time 0
  Sort Area is  capture/addr_4 : 0 0 : 182 182 : Used 1 time 0
@@ -419,20 +417,20 @@ Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elaps
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2600.082 ; gain = 867.836 ; free physical = 7432 ; free virtual = 24745
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1714.508 ; gain = 964.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 2608.090 ; gain = 875.844 ; free physical = 7424 ; free virtual = 24737
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1749.996 ; gain = 1000.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance buf32/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2608.090 ; gain = 875.844 ; free physical = 7429 ; free virtual = 24742
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1751.074 ; gain = 1001.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -450,37 +448,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7389 ; free virtual = 24713
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7389 ; free virtual = 24713
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7380 ; free virtual = 24716
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7378 ; free virtual = 24714
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7375 ; free virtual = 24712
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7374 ; free virtual = 24710
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -512,18 +510,18 @@ Report Cell Usage:
 |3     |CARRY4    |   190|
 |4     |DSP48E1   |     3|
 |5     |LUT1      |    56|
-|6     |LUT2      |   389|
-|7     |LUT3      |   134|
+|6     |LUT2      |   387|
+|7     |LUT3      |   136|
 |8     |LUT4      |   171|
-|9     |LUT5      |   203|
-|10    |LUT6      |   487|
+|9     |LUT5      |   206|
+|10    |LUT6      |   514|
 |11    |MUXF7     |    37|
-|12    |MUXF8     |     9|
+|12    |MUXF8     |     4|
 |13    |PLLE2_ADV |     1|
 |14    |RAMB18E1  |     2|
 |16    |RAMB36E1  |    26|
 |20    |FDCE      |    34|
-|21    |FDPE      |     7|
+|21    |FDPE      |     9|
 |22    |FDRE      |   401|
 |23    |FDSE      |     4|
 |24    |IBUF      |    21|
@@ -531,30 +529,27 @@ Report Cell Usage:
 |26    |OBUF      |    38|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.902 ; gain = 1033.656 ; free physical = 7374 ; free virtual = 24710
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 161 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 2765.902 ; gain = 993.602 ; free physical = 7362 ; free virtual = 24699
-Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2765.910 ; gain = 1033.656 ; free physical = 7362 ; free virtual = 24699
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:37 . Memory (MB): peak = 1977.203 ; gain = 1213.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1977.203 ; gain = 1227.355
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2765.910 ; gain = 0.000 ; free physical = 7538 ; free virtual = 24864
-INFO: [Netlist 29-17] Analyzing 269 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1982.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 264 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2821.930 ; gain = 0.000 ; free physical = 7399 ; free virtual = 24866
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.016 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
 
-Synth Design complete | Checksum: 6ac4336b
+Synth Design complete | Checksum: 78dd97c8
 INFO: [Common 17-83] Releasing license: Synthesis
-78 Infos, 133 Warnings, 1 Critical Warnings and 0 Errors encountered.
+77 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:12 . Memory (MB): peak = 2821.965 ; gain = 1201.055 ; free physical = 7393 ; free virtual = 24864
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2049.538; main = 1915.023; forked = 280.109
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3657.312; main = 2821.934; forked = 994.219
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2845.941 ; gain = 0.000 ; free physical = 7393 ; free virtual = 24864
-INFO: [Common 17-1381] The checkpoint '/home/splexmus/Documents/Basys3-Camera/src/project_1.runs/synth_1/ov7670_top.dcp' has been generated.
-INFO: [Common 17-206] Exiting Vivado at Mon May 11 13:02:49 2026...
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:02 . Memory (MB): peak = 1990.016 ; gain = 1428.637
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1990.016 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/synth_1/ov7670_top.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Tue May 12 10:10:58 2026...

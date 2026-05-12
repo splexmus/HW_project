@@ -9,12 +9,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 |
 # IP: ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0} -quiet] -quiet
 
-# XDC: /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
+# XDC: c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
+# XDC: c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
+# XDC: c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
 
-# XDC: /home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
+# XDC: c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc

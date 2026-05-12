@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
 # Vivado v2025.2 (64-bit)
-# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon May 11 13:02:52 2026
-# Process ID         : 1400332
-# Current directory  : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/impl_1
-# Command line       : vivado -log ov7670_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov7670_top.tcl -notrace
-# Log file           : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/impl_1/ov7670_top.vdi
-# Journal file       : /home/splexmus/Documents/Basys3-Camera/src/project_1.runs/impl_1/vivado.jou
-# Running On         : Ubuntuvictus
-# Platform           : Ubuntu
-# Operating System   : Ubuntu 24.04.4 LTS
-# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
-# CPU Frequency      : 768.599 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 12
-# Host memory        : 33271 MB
-# Swap memory        : 8589 MB
-# Total Virtual      : 41861 MB
-# Available Virtual  : 27696 MB
+# Start of session at: Tue May 12 10:11:06 2026
+# Process ID         : 20636
+# Current directory  : C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/impl_1
+# Command line       : vivado.exe -log ov7670_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov7670_top.tcl -notrace
+# Log file           : C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/impl_1/ov7670_top.vdi
+# Journal file       : C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-16BVB5I3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 225H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 14
+# Host memory        : 25230 MB
+# Swap memory        : 15569 MB
+# Total Virtual      : 40799 MB
+# Available Virtual  : 16695 MB
 #-----------------------------------------------------------
 source ov7670_top.tcl -notrace

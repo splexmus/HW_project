@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/splexmus/Documents/Basys3-Camera/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc rfile:../../../project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc id:1 order:EARLY scoped_inst:clk_div/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/splexmus/Documents/Basys3-Camera/src/project_1.srcs/constrs_1/new/constrain_1.xdc rfile:../../../project_1.srcs/constrs_1/new/constrain_1.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc rfile:../../../project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc id:1 order:EARLY scoped_inst:clk_div/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Taranon/Work/Hardware_syn_lab/Project_HW/HW_project/src/project_1.srcs/constrs_1/new/constrain_1.xdc rfile:../../../project_1.srcs/constrs_1/new/constrain_1.xdc id:2} [current_design]
 current_instance clk_div/inst
 set_property src_info {type:SCOPED_XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.100
