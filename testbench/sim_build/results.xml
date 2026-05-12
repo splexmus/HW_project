@@ -1,0 +1,9 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1778520235" />
+    <testcase name="test_grayscale_no_clip" classname="downscale_32x32_tb" file="D:\cu\hardwareSysLab\project\HW_project\testbench\downscale_32x32_tb.py" lineno="43" time="0.003398895263671875" sim_time_ns="35.0" ratio_time="10297.463524130191" />
+    <testcase name="test_grayscale_max_nibble" classname="downscale_32x32_tb" file="D:\cu\hardwareSysLab\project\HW_project\testbench\downscale_32x32_tb.py" lineno="58" time="0.0" sim_time_ns="35.00000000000001" ratio_time="inf" />
+    <testcase name="test_sample_gating" classname="downscale_32x32_tb" file="D:\cu\hardwareSysLab\project\HW_project\testbench\downscale_32x32_tb.py" lineno="72" time="0.0" sim_time_ns="95.00000000000001" ratio_time="inf" />
+    <testcase name="test_frame_done_pulse" classname="downscale_32x32_tb" file="D:\cu\hardwareSysLab\project\HW_project\testbench\downscale_32x32_tb.py" lineno="98" time="0.0626983642578125" sim_time_ns="10470.0" ratio_time="166990.00243368215" />
+  </testsuite>
+</testsuites>
